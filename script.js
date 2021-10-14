@@ -1,3 +1,5 @@
+const image = document.getElementById('homePhoto')
+
 var currentIronStone = 'f'
 var currentTonePallet = 'bfb'
 var currentColorSchema = 1
@@ -17,5 +19,5 @@ function selectIronStone(ironStone){
 
 function alterPhoto(ironStone,changeTonePallet,colorSchema){
     photoName = ironStone + changeTonePallet + colorSchema
-    console.log(photoName)
+    image.setAttribute('src','./resurces/Photos/'+ photoName +'.png')
 }

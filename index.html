@@ -20,17 +20,13 @@
                 <h3>Palheta de Cores</h3>
                 <div class="colorToneGrid">
                     <div class="colorToneButton" onclick="selectTonePallet(`bfb`)">
-                        <div class="colors">
-                            <img src="./resurces/Tone/Branco Paris.jpg" alt="Branco Paris">
-                            <img src="./resurces/Tone/Full Black.jpg" alt="Full Black">
-                        </div>
+                        <div id="brancoParis"></div>
+                        <div id="fullBlack"></div>
                         <h5>Branco Paris / Full Black</h5>
                     </div>
                     <div class="colorToneButton" onclick="selectTonePallet(`crb`)">
-                        <div class="colors">
-                            <img src="./resurces/Tone/Cinza.jpg" alt="Cinza">
-                            <img src="./resurces/Tone/Real Black.jpg" alt="Real Black">
-                        </div>
+                        <div id="cinza"></div>
+                        <div id="realBlack"></div>
                         <h5>Cinza / Real Black</h5>
                     </div>
                 </div>
@@ -57,9 +53,14 @@
             </div>
             <div class="ironStone">
                 <h3>Pedra Ferro</h3>
-                <input type="radio" name="yes_no" value="yes" onclick="selectIronStone(`f`)" checked>Sim <br>
-                <input type="radio" name="yes_no" value="no" onclick="selectIronStone(`c`)">Não <br>
+                <div class="inputs">
+                    <input type="radio" name="yes_no" value="yes" onclick="selectIronStone(`f`)" checked>Sim <br>
+                    <input type="radio" name="yes_no" value="no" onclick="selectIronStone(`c`)">Não <br>
+                </div>
             </div>
+        </div>
+        <div class="image">
+            <img src="./resurces/Photos/cbfb1.png" alt="Foto da Casa" id="homePhoto">
         </div>
     </div>
     <script src="./script.js"></script>
