@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: lightgray;
+}
+.mainBody{
+    width: 90vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.title h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 2vh;
+}
+.title{
+    border-bottom: 1px solid lightgray;
+}
+.selectors h3{
+    margin-left: 2%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+.colorsSchemasGrid{
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    grid-column-gap: 2%;
+    grid-row-gap: 2vh;
+}
+.selectors .colorsSchemasGrid img{
+    width: 100%;
+}
+.colorTone .colorToneGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.colorTone .colorToneButton{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    background-color: #f1f1f1;
+    width: 40%;
+}
+.colorTone .colors img{
+    width: 8vw;
+    height: 8vw;
+}
+.colorTone .colorToneButton h5{
+    position: relative;
+    bottom: 9vh;
+    left: 1vw;
+    font-size: 1.3em;
+    font-weight: 1200;
+    color: white;
+}

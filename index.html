@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Visualizer - Uriel Belo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainBody">
+        <div class="title">
+            <h1>Home Visualizer</h1>
+        </div>
+        <div class="selectors">
+            <div class="colorTone">
+                <h3>Palheta de Cores</h3>
+                <div class="colorToneGrid">
+                    <div class="colorToneButton" onclick="selectTonePallet(`bfb`)">
+                        <div class="colors">
+                            <img src="./resurces/Tone/Branco Paris.jpg" alt="Branco Paris">
+                            <img src="./resurces/Tone/Full Black.jpg" alt="Full Black">
+                        </div>
+                        <h5>Branco Paris / Full Black</h5>
+                    </div>
+                    <div class="colorToneButton" onclick="selectTonePallet(`crb`)">
+                        <div class="colors">
+                            <img src="./resurces/Tone/Cinza.jpg" alt="Cinza">
+                            <img src="./resurces/Tone/Real Black.jpg" alt="Real Black">
+                        </div>
+                        <h5>Cinza / Real Black</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="colorSchema">
+                <h3>Distribuição de Cores</h3>
+                <div class="colorsSchemasGrid">
+                    <button id="colorSchema1" onclick="selectColorSchema(1)">
+                        <img src="./resurces/Schemas/Color Schema 1.png" alt="Color Schema 1">
+                    </button>
+                    <button id="colorSchema2" onclick="selectColorSchema(2)">
+                        <img src="./resurces/Schemas/Color Schema 2.png" alt="Color Schema 2">
+                    </button>
+                    <button id="colorSchema3" onclick="selectColorSchema(3)">
+                        <img src="./resurces/Schemas/Color Schema 3.png" alt="Color Schema 3">
+                    </button>
+                    <button id="colorSchema4" onclick="selectColorSchema(4)">
+                        <img src="./resurces/Schemas/Color Schema 4.png" alt="Color Schema 4">
+                    </button>
+                    <button id="colorSchema5" onclick="selectColorSchema(5)">
+                        <img src="./resurces/Schemas/Color Schema 5.png" alt="Color Schema 5">
+                    </button>
+                </div>
+            </div>
+            <div class="ironStone">
+                <h3>Pedra Ferro</h3>
+                <input type="radio" name="yes_no" value="yes" onclick="selectIronStone(`f`)" checked>Sim <br>
+                <input type="radio" name="yes_no" value="no" onclick="selectIronStone(`c`)">Não <br>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
